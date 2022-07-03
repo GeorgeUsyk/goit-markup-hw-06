@@ -399,14 +399,18 @@ background: var(--top-logo-color-left);
     color: var(--main-text-color);
 }
 .checkbox-form {
-    display: block;
+    display: flex;
     margin-bottom: 30px;
+    justify-content: center;
 }
 
 .checkbox-label {
     display: flex;
     align-items: center;
     font-family: roboto, sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
 }
 
 .checkbox {
@@ -437,9 +441,8 @@ background: var(--top-logo-color-left);
     background-size: contain;
     background-origin: border-box;
 }
-.checkbox-modal:focus-within {
-    border: 1px solid #2196F3;
-    border-radius: 4px;
+.checkbox:focus + .checkbox-icon {
+    border: 2px solid #2196F3;
 }
 
 .modal-btn {
